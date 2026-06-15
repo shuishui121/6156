@@ -1,0 +1,40 @@
+{
+  "name": "vr-pole-vault-simulator",
+  "version": "1.0.0",
+  "description": "VR跳高训练模拟器 - 支持动作捕捉、实时分析、多人训练、教练远程指导",
+  "main": "src/server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:client": "webpack serve --mode development --open",
+    "dev:server": "nodemon src/server/index.js",
+    "build": "webpack --mode production",
+    "start": "node src/server/index.js",
+    "lint": "eslint src/**/*.js"
+  },
+  "keywords": ["VR", "pole-vault", "training", "motion-capture", "multiplayer"],
+  "author": "Professional Training Team",
+  "license": "MIT",
+  "dependencies": {
+    "three": "^0.160.0",
+    "cannon-es": "^0.20.0",
+    "ws": "^8.16.0",
+    "express": "^4.18.2",
+    "socket.io": "^4.7.4",
+    "socket.io-client": "^4.7.4",
+    "cors": "^2.8.5",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1",
+    "html-webpack-plugin": "^5.6.0",
+    "babel-loader": "^9.1.3",
+    "@babel/core": "^7.23.7",
+    "@babel/preset-env": "^7.23.8",
+    "copy-webpack-plugin": "^12.0.2",
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.3",
+    "eslint": "^8.56.0"
+  }
+}

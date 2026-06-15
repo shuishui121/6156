@@ -1,0 +1,91 @@
+﻿# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.lnk
+$RECYCLE.BIN/
+System Volume Information/
+
+# Mac system files
+.DS_Store
+.AppleDouble
+._*
+.fseventsd
+.Spotlight-V100
+.Trashes
+
+# Linux temp files
+*~
+
+# VS Code
+.vscode/
+*.code-workspace
+.history/
+.env.local
+
+# JetBrains IDE
+.idea/
+*.iml
+out/
+
+# Visual Studio
+.vs/
+bin/
+obj/
+*.suo
+
+# Vim swap files
+*.swp
+*.swo
+
+# Node / Frontend
+node_modules/
+npm-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+dist/
+build/
+coverage/
+.env
+!.env.example
+
+# Java Maven Gradle
+target/
+*.class
+*.jar
+.gradle/
+build/
+
+# Python
+__pycache__/
+venv/
+.venv
+.pytest_cache/
+.coverage
+
+# Go
+vendor/
+bin/
+*.exe
+
+# .NET
+[Dd]ebug/
+[Rr]elease/
+
+# Log & temp files
+*.log
+logs/
+*.tmp
+*.bak
+cache/
+temp/
+dist/
+output/
+
+# Secret config
+*.pem
+*.key
+.env.local
+application-dev.yml
+!*.example

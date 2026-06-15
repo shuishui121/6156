@@ -5,8 +5,6 @@ export class SceneManager {
     constructor(vrSystem, config) {
         this.vrSystem = vrSystem;
         this.config = config;
-        this.scene = vrSystem.scene;
-        this.camera = vrSystem.camera;
         this.physicsEngine = null;
         this.motionCapture = null;
         this.feedbackSystem = null;
@@ -28,6 +26,14 @@ export class SceneManager {
 
         this.crossbarHeight = config.training.barHeight;
         this.athleteStartPos = new THREE.Vector3(0, 0, 20);
+    }
+
+    get scene() {
+        return this.vrSystem.scene;
+    }
+
+    get camera() {
+        return this.vrSystem.camera;
     }
 
     setPhysicsEngine(engine) {

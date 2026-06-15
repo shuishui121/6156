@@ -11,6 +11,11 @@
     "start": "node src/server/index.js",
     "lint": "eslint src/**/*.js"
   },
+  "nodemonConfig": {
+    "ignore": ["dist/*", "node_modules/*", "src/client/*"],
+    "watch": ["src/server/"],
+    "ext": "js,json"
+  },
   "keywords": ["VR", "pole-vault", "training", "motion-capture", "multiplayer"],
   "author": "Professional Training Team",
   "license": "MIT",

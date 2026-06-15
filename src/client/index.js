@@ -60,6 +60,7 @@ class VRPoleVaultApp {
         try {
             await this.vrSystem.init();
             this.sceneManager.buildScene();
+            this.feedbackSystem.setScene(this.sceneManager.scene);
             this.physicsEngine.init(this.sceneManager);
             this.motionCapture.init();
             this.uiManager.showMainMenu();
